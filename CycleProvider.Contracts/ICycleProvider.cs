@@ -8,5 +8,6 @@ namespace CycleProvider.Contracts
 
         void Add(T item);
         T Next();
+        T CurrentItem { get; }
     }
 }

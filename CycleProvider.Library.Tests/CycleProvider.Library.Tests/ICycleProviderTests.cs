@@ -11,6 +11,8 @@ namespace CycleProvider.Library.Tests
         {
             private T _item;
 
+            public T CurrentItem => _item;
+
 #pragma warning disable CS0067
             public event Action<object, CycleProviderEventArgs> OnLastItem;
 #pragma warning restore CS0067

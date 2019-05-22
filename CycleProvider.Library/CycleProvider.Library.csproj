@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Colors.cs" />
     <Compile Include="CycleProvider.cs" />
     <Compile Include="OneItemBag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
