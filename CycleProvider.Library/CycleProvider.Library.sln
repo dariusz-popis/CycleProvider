@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleProvider.Library", "CycleProvider.Library.csproj", "{1DECED50-B269-4668-9381-ED973FBE8E79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DECED50-B269-4668-9381-ED973FBE8E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DECED50-B269-4668-9381-ED973FBE8E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DECED50-B269-4668-9381-ED973FBE8E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DECED50-B269-4668-9381-ED973FBE8E79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDC27CA5-C4FB-496F-AB0A-9AA806B7603E}
+	EndGlobalSection
+EndGlobal
