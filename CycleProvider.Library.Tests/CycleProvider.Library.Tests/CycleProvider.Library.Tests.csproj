@@ -51,6 +51,7 @@
     <Compile Include="ICycleProviderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CycleProviderTests.cs" />
+    <Compile Include="OneItemBagTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
