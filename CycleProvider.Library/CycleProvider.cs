@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace CycleProvider.Library
 {
-    public class CycleProvider : ICycleProvider
+    public class CycleProvider<T> : ICycleProvider<T>
     {
-        private List<object> _items = new List<object>();
+        private List<T> _items = new List<T>();
         private int _currentItem = -1;
 
-        public void Add(object item)
+        public void Add(T item)
         {
             _items.Add(item);
         }
 
         public event Action<object, CycleProviderEventArgs> OnLastItem;
 
-        public object Next()
+        public T Next()
         {
             int totalItems = _items.Count;
             if (totalItems == 0) throw new InvalidOperationException(InvalidOperationExceptionMessages.EmptyCycleProviderList);

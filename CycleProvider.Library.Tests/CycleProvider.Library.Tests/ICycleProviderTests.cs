@@ -7,17 +7,22 @@ namespace CycleProvider.Library.Tests
     [TestClass]
     public class ICycleProviderTests
     {
-        private class FakeCycleProvider : ICycleProvider
+        private class FakeCycleProvider<T> : ICycleProvider<T>
         {
-            public event Action<object, CycleProviderEventArgs> OnLastItem;
+            private T _item;
 
-            public void Add(object item)
+#pragma warning disable CS0067
+            public event Action<object, CycleProviderEventArgs> OnLastItem;
+#pragma warning restore CS0067
+
+            public void Add(T item)
             {
+                _item = item;
             }
 
-            object ICycleProvider.Next()
+            T ICycleProvider<T>.Next()
             {
-                return 10;
+                return _item;
             }
 
             public void AdditionalMethodOutsideOfInterfaceDefinition() { }
@@ -26,11 +31,15 @@ namespace CycleProvider.Library.Tests
         [TestMethod]
         public void TDD_PreTestsPreparation_Demo()
         {
-            FakeCycleProvider fakeCycleProvider = new FakeCycleProvider();
+            //ICycleProvider<int> iFakeCycleProvider = new FakeCycleProvider<int>();
+            //iFakeCycleProvider.AdditionalMethodOutsideOfInterfaceDefinition(); // Compilation Error
+
+            FakeCycleProvider<int> fakeCycleProvider = new FakeCycleProvider<int>();
             fakeCycleProvider.AdditionalMethodOutsideOfInterfaceDefinition();
             //fakeCycleProvider.Next(); // Compilation Error
 
-            ICycleProvider cycleProvider = new FakeCycleProvider();
+            ICycleProvider<int> cycleProvider = new FakeCycleProvider<int>();
+            cycleProvider.Add(10);
             var actual = cycleProvider.Next();
 
             Assert.AreEqual(10, actual);

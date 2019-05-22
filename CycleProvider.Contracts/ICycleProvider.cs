@@ -2,11 +2,11 @@
 
 namespace CycleProvider.Contracts
 {
-    public interface ICycleProvider
+    public interface ICycleProvider<T>
     {
         event Action<object, CycleProviderEventArgs> OnLastItem;
 
-        void Add(object item);
-        object Next();
+        void Add(T item);
+        T Next();
     }
 }
