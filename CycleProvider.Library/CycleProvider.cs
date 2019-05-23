@@ -23,7 +23,7 @@ namespace CycleProvider.Library
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public T Next()
+        public virtual T Next()
         {
             int totalItems = _items.Count;
             if (totalItems == 0) throw new InvalidOperationException(InvalidOperationExceptionMessages.EmptyCycleProviderList);
