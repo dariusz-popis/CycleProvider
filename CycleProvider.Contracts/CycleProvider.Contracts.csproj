@@ -20,6 +20,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,8 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CycleProviderEventArgs.cs" />
+    <Compile Include="HRException.cs" />
     <Compile Include="ICycleProvider.cs" />
     <Compile Include="InvalidOperationExceptionMessages.cs" />
+    <Compile Include="IPerson.cs" />
     <Compile Include="OneItemBagException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
