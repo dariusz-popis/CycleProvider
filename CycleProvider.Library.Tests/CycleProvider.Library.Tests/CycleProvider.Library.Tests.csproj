@@ -53,6 +53,8 @@
     <Compile Include="CycleProviderTests.cs" />
     <Compile Include="OneItemBagTests.cs" />
     <Compile Include="PersonBaseTests.cs" />
+    <Compile Include="PersonBuilderTests.cs" />
+    <Compile Include="ThreadExtensionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

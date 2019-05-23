@@ -45,7 +45,10 @@
     <Compile Include="OneItemBag.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonBase.cs" />
+    <Compile Include="PersonBuilder.cs" />
+    <Compile Include="PersonDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThreadExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CycleProvider.Contracts\CycleProvider.Contracts.csproj">
