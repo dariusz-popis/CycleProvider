@@ -29,7 +29,13 @@ namespace CycleProvider.WpfApp
             SetupCycleProvider();
             SetupElpFloat();
             SetupBackgroundWorker();
-            BtnStart.Click += (s, a) => { if (!_bw.IsBusy) _bw.RunWorkerAsync(); BtnStart.IsHitTestVisible = false; };
+            //BtnStart.Click += (s, a) => { if (!_bw.IsBusy) _bw.RunWorkerAsync(); BtnStart.IsHitTestVisible = false; };
+            BtnStart.Click += (s, a) => {
+                if (!_bw.IsBusy) _bw.RunWorkerAsync();
+                var calc = new CalculatorServiceClient.CalculatorServiceClient();
+                var add = calc.Add(12, 500);
+                Title = $"{add.LeftOperand} {add.Operation} {add.RightOperand} = {add.Result}";
+            };
         }
 
         private void SetupElpFloat()

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CycleProvider.CalculatorService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CycleProvider.CalculatorService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Calculation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LeftOperand" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Operation" type="tns:Operation" />
+      <xs:element minOccurs="0" name="Result" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RightOperand" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Calculation" nillable="true" type="tns:Calculation" />
+  <xs:simpleType name="Operation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Add">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Sub">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Operation" nillable="true" type="tns:Operation" />
+</xs:schema>
