@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleProvider.ConsoleParall
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleProvider.CalculatorService", "..\CycleProvider.CalculatorService\CycleProvider.CalculatorService.csproj", "{48E7DA2B-FA12-4D88-B914-31BBB9B8905F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CycleProvider.MvcApp", "CycleProvider.MvcApp\CycleProvider.MvcApp.csproj", "{61EA31FE-CD62-4B80-81BC-07C54C493E2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{48E7DA2B-FA12-4D88-B914-31BBB9B8905F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48E7DA2B-FA12-4D88-B914-31BBB9B8905F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48E7DA2B-FA12-4D88-B914-31BBB9B8905F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61EA31FE-CD62-4B80-81BC-07C54C493E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EA31FE-CD62-4B80-81BC-07C54C493E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61EA31FE-CD62-4B80-81BC-07C54C493E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61EA31FE-CD62-4B80-81BC-07C54C493E2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
