@@ -45,6 +45,8 @@
     <Compile Include="CycleProviderEventArgs.cs" />
     <Compile Include="HRException.cs" />
     <Compile Include="ICycleProvider.cs" />
+    <Compile Include="IGenericInvIn.cs" />
+    <Compile Include="IGenericInvOut.cs" />
     <Compile Include="InvalidOperationExceptionMessages.cs" />
     <Compile Include="IPerson.cs" />
     <Compile Include="OneItemBagException.cs" />

@@ -57,6 +57,8 @@
     <Compile Include="PersonBuilderTests.cs" />
     <Compile Include="ThreadExtensionTests.cs" />
     <Compile Include="DynamicUsageTests.cs" />
+    <Compile Include="GenericInvTests.cs" />
+    <Compile Include="DbProviderMockTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

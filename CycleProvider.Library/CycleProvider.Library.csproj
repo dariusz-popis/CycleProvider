@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Colors.cs" />
     <Compile Include="CycleProvider.cs" />
+    <Compile Include="DbProviderMock.cs" />
+    <Compile Include="GenericInv.cs" />
     <Compile Include="OneItemBag.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonBase.cs" />
